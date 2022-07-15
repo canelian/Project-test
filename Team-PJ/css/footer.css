@@ -1,0 +1,100 @@
+@import url(../css/reset.css);
+
+body {
+  min-width: 320px;
+}
+
+.sns {
+  padding-top: 36px;
+  margin-bottom: 30px;
+  margin-right: -20px;
+}
+
+/*.sns > a:last-child {
+  margin-right: 0;
+}*/
+
+.sns a img {
+  padding-right: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bank1, .bank2 p, #ask {
+  font-size: 12px;
+}
+
+.bank2 {
+  margin-left: 60px;
+  line-height: 23px;
+}
+
+.bank2 p {
+  font-weight: bold;
+}
+
+.bank2 button {
+  font-size: 9px;
+  padding: 3px;
+  position: relative;
+  left: 5px;
+}
+
+#bankbook {
+  padding-left: 20px;
+}
+
+#ask {
+  padding-left: 20px;
+}
+
+#deliver {
+  font-size: 11px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.sns, #bottom, .bank1, .bank3 {
+  display: flex;
+  justify-content: center;
+}
+
+.bank2, .down {
+  text-align: center;
+}
+
+.bank3 {
+  padding-top: 30px;
+  padding-bottom: 37px;
+}
+
+.down #cs {
+  padding-bottom: 18px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.down #adress {
+  padding-left: 34.5px;
+  padding-right: 34.5px;
+  padding-bottom: 5px;
+  font-size: 11px;
+}
+
+.down #day {
+  padding-left: 74px;
+  padding-right: 74px;
+  font-size: 11px;
+}
+
+#companybank {
+  padding-left: 55px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+#bottom {
+  font-size: 8px;
+}
