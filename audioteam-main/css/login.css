@@ -1,0 +1,96 @@
+/* 로그인창-------------------- */
+
+.line {
+    margin: 0 auto;
+    width: 47px;
+    height: 1px;
+    background-color: #333333;
+  }
+  
+  .log-in{
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .log-in h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .textbox {
+    padding: 20px;
+  }
+  
+  .textbox .text{
+    width: 100%;
+    height: 44px;
+    background-color: #eeeeee;
+    margin-bottom: 15px;
+  }
+  
+  .textbox .password{
+    width: 100%;
+    height: 44px;
+    background-color: #eeeeee;
+  }
+  
+  .text p{
+    color: #666666;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .password p {
+    color: #666666;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .check-box {
+    margin-top: -30px;
+  }
+  
+  .check-box span{
+    padding: 5px;
+  }
+  
+  
+  input[id="cb1"] + label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #333;    
+    cursor: pointer;
+  }
+  input[id="cb1"]:checked + label {
+    width: 12px;
+    height: 12px;
+    padding: 1px;
+    border: 1px solid #333;   
+    background: #333;
+    background-clip: content-box;
+  }
+  input[id="cb1"] {
+    display: none;
+  }
+  
+  input[id="cb2"] + label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #333;    
+    cursor: pointer;
+  }
+  input[id="cb2"]:checked + label {
+    width: 12px;
+    height: 12px;
+    padding: 1px;
+    border: 1px solid #333;   
+    background: #333;
+    background-clip: content-box;
+  }
+  input[id="cb2"] {
+    display: none;
+  }

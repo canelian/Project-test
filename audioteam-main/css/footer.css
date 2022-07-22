@@ -1,0 +1,114 @@
+
+.sns {
+    padding-top: 36px;
+    margin-bottom: 30px;
+    margin-right: -15px;
+  }
+  
+  /*.sns > a:last-child {
+    margin-right: 0;
+  }*/
+  
+  .sns a img {
+    padding-right: 25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .middle {
+    margin-left: 21px;
+  }
+  .bank1, .bank2 p, #ask {
+    font-size: 12px;
+  }
+  
+  .bank2 {
+    margin-left: 50px;
+    line-height: 23px;
+  }
+  
+  .bank2 p {
+    font-weight: bold;
+  }
+  
+  .bank2 button {
+    font-size: 9px;
+    padding: 3px;
+    position: relative;
+    left: 5px;
+  }
+  
+  .bank2 .sitelist ul li {
+    list-style: none;
+    
+  }
+  
+  #bankbook {
+    padding-left: 20px;
+  }
+  
+  #ask {
+    padding-left: 20px;
+    
+  }
+  
+  #deliver {
+    font-size: 11px;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: relative;
+    right: 10px
+  }
+  
+  .sns, #bottom, .bank1, .bank3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bank2, .down {
+    text-align: center;
+  }
+  
+  .bank3 {
+    padding-top: 30px;
+    padding-bottom: 37px;
+  }
+  
+  .down #cs {
+    padding-bottom: 18px;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  .down #adress {
+    margin-left: 34.5px;
+    margin-right: 34.5px;
+    padding-bottom: 5px;
+    font-size: 11px;
+  }
+  
+  .down #day {
+    padding-left: 74px;
+    padding-right: 74px;
+    font-size: 11px;
+  }
+  
+  #companybank {
+    padding-left: 50px;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  #bottom {
+    font-size: 8px;
+    padding-top: 32.5px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #bottom a {
+    color: black;
+  }

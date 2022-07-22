@@ -1,0 +1,30 @@
+
+/** {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}*/
+/* ex) <div class="menu">, <div class = "lala menu">
+ position:absolute, 
+ .menu position:relative 때문에
+ body를 기준으로 위치를 조정할 수 있습니다.
+ 저는 메뉴가 화면의 왼쪽 끝에 완전히 붙게하기 위하여 left:0, top:0의 위치를
+부여했습니다.*/
+/* <div class= "menu"> <h1></h1> </div> 의 경우에만 적용*/
+/*text-align: center;*/
+/* <div class="menu">
+ <div class="menu__list">
+ </div>
+ </div>
+ 에만 적용 가능, div태그가 아니어도 클래스 이름만 동일하면 적용!*/
+
+/* <div class = "menu">
+<div class="menu__list">
+<div class="item">
+<div class="item">
+ </div>
+ </div>의 경우에서 모든 item에 적용*/
+
+/* 마지막 item에만 적용*/

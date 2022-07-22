@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+.scroll {
+  width: 150px;
+  height: 216px;
+  border: 1px solid #000;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+
+.wrap {
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  min-height: 29px;
+  border-bottom: 1px solid #222;
+  text-indent: 10px;
+  background-color: lightgray;
+}
