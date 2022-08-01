@@ -1,0 +1,116 @@
+.container {
+  max-width: 500px;
+  /*min-width: 320px;*/
+  margin: 0 auto;
+  display: flex;
+  /*outline: 1px solid red;*/
+}
+
+header {
+  height: 80px;
+  background: #333;
+}
+
+header nav a {
+  /*color: #fff;*/
+  margin-left: 25px;
+  /*margin-right: 25px;*/
+  display: block;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+header .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*PC에서는 토글없음*/
+#toggle {
+  display: block;
+  background: transparent;
+  color: #fff;
+  border-style: none;
+  font-size: 32px;
+  position: absolute;
+  left: 20px;
+  top: 26px;  
+}
+
+/*모바일 네비*/
+header nav {
+  background: rgba(196, 196, 196, 0.6);
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  /*display: none;*/
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+header nav.on {
+  /*display: block;*/
+  height: 140px;
+  opacity: 1;
+  padding: 20px 0;
+}
+
+#main-visual {
+  width: 100%;
+  height: 500px;
+  padding-bottom: calc(34.7% / 2);
+  padding-top: calc(34.7% / 2);
+  background-image: url(../img/mobile01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*#main-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+
+#main-visual h1 {
+  font-size: 40px;
+}
+
+#main-visual .container {
+  display: block;
+  height: 100%;
+  outline: 1px solid red;
+}
+
+#about .container {
+  display: block;
+}
+
+#about h2 {
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+
+#about li {
+  margin-bottom: 15px;
+}
+
+#about .about,
+#about .location {
+  height: 300px;
+  padding: 50px 20px 70px 20px;
+  /*padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 70px;*/
+
+}
+
+#about .about {
+  background: #ddd;
+}
+

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  /*height: 778px;*/
+  font-family: "Noto Sans Korean", sans-serif;
+  padding: 35px 40px 94px 40px;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li p {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.won {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .front p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-right: 36px;
+}
+
+header .front button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12.5px 4px 12.5px;
+  margin-top: 25px;
+}
+
+header #imgs1 {
+  width: 100%;
+  margin-bottom: 51px;
+}
+
+header #imgs1 ul {
+  display: flex;
+}
+
+header #imgs1 ul li {
+  margin-right: 20px;
+}
+
+header #imgs1 ul li:last-child {
+  margin-right: 0;
+}
+
+main #imgs2 {
+  width: 100%;
+}
+
+main #imgs2 ul {
+  display: flex;
+}
+
+main #imgs2 ul li {
+  margin-right: 20px;
+}
+
+main #imgs2 ul li:last-child {
+  margin-right: 0;
+}
+

@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #009688;
+  --background: #fff;
+  --sub-color: #6a6a6a;
+  --text-color: #666;
+}
+
+body {
+  min-width: 768px;
+  width: 960px;
+  height: 1200px;
+  margin: 0 auto;
+  /*outline: 1px solid red;*/
+}
+
+header {
+  height: 200px;
+  /*outline: 1px solid red;*/
+  display: flex;
+  position: relative;
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer {
+  padding: 20px;
+}
+
+header .head {
+  position: relative;
+  top: calc((100% / 2) - (101px / 2));
+  left: 0;
+}
+
+header #gnb {
+  width: 100%;
+  font-size: 18px;
+}
+
+/*메뉴 마우스대기*/
+#gnb #dept1 {
+  display: flex;
+  padding: 5px 10px;
+  text-align: center;
+  position: absolute;
+  top: calc((100% / 2) - 10px);
+  right: 0;
+  
+}
+
+#gnb > #dept1 > .pointer {
+  width: 150px;
+  margin-right: 20px;
+  /*background-color: #ccc;*/
+  /*outline: 1px solid red;*/
+  z-index: 99;
+  font-weight: bold;
+}
+
+#gnb > #dept1 > .pointer:hover {
+  color: hsla(210, 100%, 32%, 0.7);
+  cursor: pointer;
+}
+
+#gnb > #dept1 > .pointer > a:hover,
+#gnb .dept2 > li > a:hover {
+  color: hsla(210, 100%, 32%, 0.7);
+}
+
+#gnb .dept2 {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+#gnb .dept2 li {
+  font-size: 15px;
+}
+
+#gnb .dept2.on {
+  height: 150px;
+  opacity: 1;
+}
+
+#gnb .dept2 > li > a {
+  display: block;
+  padding: 5px 10px;
+  /*background: rgba(2, 247, 137, 0.7);*/
+  background: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+#gnb .dept2 > li > a:hover {
+  background: lightskyblue;
+}
+
+/*배너 슬라이드*/
+#main-image .slider {
+  width: 960px;
+  height: 350px;
+  /*outline: 4px solid red;*/
+  overflow: hidden;
+}
+
+#main-image .slider .sliders {
+  transform: translateY(calc(-350px * 0));
+  transition: 0.5s;
+}
+
+#main-image .slider .sliders img {
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+#contents {
+  width: 100%;
+  height: 500px;
+  outline: 1px solid red;
+}
+
+#contents .container {
+  height: calc(100% - 100px);
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+#contents .container h3 {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#contents .container p {
+  margin-bottom: 10px;
+}
+
+#contents .notice, 
+#contents .partner,
+#contents .iconcontents {
+  flex: 1;
+  border: 1px solid;
+}
+
+#contents .notice {
+  width: 100%;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#contents .notice .a {
+  text-decoration: underline;
+}
+
+#contents .partner .partslider {
+  width: 300px;
+  height: 111px;
+  /*outline: 4px solid red;*/
+  overflow: hidden;
+}
+
+#contents .partner .partslider .partsliders {
+  transform: translateY(calc(-111px * 0));
+  transition: 0.5s;
+}
+
+#contents .partner .partslider .partsliders img {
+  width: 100%;
+  height: 111px;
+  display: block;
+}
+
+
+#contents .iconcontents img {
+  width: 48px;  
+}
+
+#contents .iconcontents .center {
+  display: flex;
+  justify-content: center;
+}
+
+/*푸터*/
+footer .secret {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+footer .col::after {
+  content: "";
+  border: 1px solid black;
+  background: black;
+  margin: 0 4px 0 4px;
+}
+
+footer .col:last-child::after {
+  border: none;
+}
+
+footer .secret p {
+  font-weight: bold;
+}
+
+footer .corp {
+  display: flex;
+  font-size: 14px;
+}
+
+footer .company1, footer .company2 {
+  flex: 1;
+}
+
+footer .corp p {
+  line-height: 17px;
+}

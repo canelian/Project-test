@@ -46,4 +46,12 @@ $(function(){
     // $('#notice').removeClass('on');
   });
 
+  // 레이어팝업창 생성 및 닫기
+  $('.notice-btn').click(function(){
+    $('.modal').addClass('on');
+  });
+
+  $('.close-btn').click(function(){
+    $('.modal').removeClass('on');
+  });
 });
