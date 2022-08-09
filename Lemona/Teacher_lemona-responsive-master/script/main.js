@@ -5,6 +5,16 @@ $(function(){
 	});
 
 
+	// AOS 초기화
+	AOS.init();
 
-
+	
 }); // $
+
+$(function(){
+	// modal
+	$(".modal .btn-close").click(function(){
+		$(".modal .box").removeClass("on");
+	});
+	console.log();
+});

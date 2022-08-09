@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <table border="1">
+    <col width="50"><col width="200"><col width="150">
+    
+    <tr>
+      <th>번호</th><th>이름</th><th>나이</th>
+    </tr>
+    <tr class="cls">
+      <th>1</th><td>홍길동</td><td>24</td>
+    </tr>
+    <tr class="cls">
+      <th>2</th><td>성춘향</td><td>19</td>
+    </tr>
+    <tr class="cls">
+      <th>3</th><td>일지매</td><td>35</td>
+    </tr>
+    </table>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("tr.cls").mouseover(function () {
+        // Java Script
+    //		document.getElementsByClassName("cls").style.backgroundColor;
+        
+        $(this).css('background', '#00ff00');
+      });
+      $("tr.cls").mouseout(function () { 
+        $(this).css('background', '#fff');
+      });
+    
+      $("td").click(function() {
+        let val = $(this).text();
+        alert(val);
+      });
+    });	
+    </script>
+
+</body>
+</html>

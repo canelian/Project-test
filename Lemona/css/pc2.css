@@ -1,0 +1,305 @@
+/* pc.css */
+body {
+  /* background: #ccc; */
+  font-size: 20px;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  padding-left: 30px;
+  padding-right: 30px;
+  /* outline: 1px solid #333; */
+}
+
+#toggle-btn {
+  display: none;
+}
+
+#main-header {
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  height: var(--pc-header-height);
+  background: #fff;
+}
+
+#main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#gnb ul li {
+  display: inline-block;
+  margin-left: 140px;
+}
+
+/* 메뉴 간격 조정(910px까지의 메뉴 간격) */
+@media screen and (max-width: 910px) {
+  #gnb ul li {
+    margin-left: 80px;
+  }
+}
+
+/* 메인 비주얼 */
+#main-visual {
+  background: #FCEEAD;
+  width: 100%;
+  height: calc(100vh - var(--pc-header-height));
+  box-sizing: content-box;
+  padding-top: var(--pc-header-height);  
+}
+
+#main-visual .container {
+  display: flex;
+  /* background: #ccc; */
+  height: 100%;
+}
+
+#main-visual .title {
+  flex: 1;
+  /* outline: 1px solid #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-visual .title h2 {
+  /* outline: 1px solid red; */
+  font-weight: 500;
+  font-size: 74.4828px;
+  line-height: 90px;
+  margin-bottom: 55px;
+
+letter-spacing: 0.2em;  
+}
+
+#main-visual .title p {
+  /* outline: 1px solid red; */
+}
+
+#main-visual .title p > span {
+  display: block;
+}
+
+#main-visual .title p > span:first-child {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.3em;
+}
+
+#main-visual .title p > span:last-child {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+#main-visual .img {
+  flex: 1;
+  /* outline: 1px solid #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#main-visual .img img {
+  width: 75%;
+
+}
+
+
+/* vitamin 섹션 */
+#main-section1 {
+  background: pink;
+  height: calc(100vh - var(--pc-header-height));
+}
+
+#main-section1 .container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 0;
+}
+
+#main-section1 .container img {
+  width: 50%;
+}
+
+#main-section1 .container .col {
+  /* flex: 1; */
+  width: 50%;
+  /* outline: 1px solid #333; */
+}
+
+#main-section1 .container .col:first-child img {
+  width: 71%;
+  display: block;
+}
+
+#main-section1 .container .col:first-child {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-section1 .container .col:last-child {
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 75px;
+  padding-right: 30px;
+}
+
+#main-section1 .container .col:last-child .info {
+  /* outline: 1px solid red; */
+  max-width: 570px;
+}
+
+#main-section1 .container .col:last-child h2 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#main-section1 .container .col:last-child .sub-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#main-section1 .container .col:last-child p {
+  margin-bottom: 40px;
+}
+
+/*4-layout*/
+#layout {
+  height: 990px;
+  border: 2px solid;
+}
+
+#layout .layout-container h2 {
+  padding-top: 65px;
+  margin-bottom: 20px;
+}
+
+#layout .layout-container p {
+  margin-bottom: 50px;
+}
+
+#layout .layout-container .group1 {
+  display: flex;
+  height: 495px;
+  /*outline: 1px solid blue;*/
+}
+
+#layout .layout-container #layout1 {
+  width: 50%;
+  /*outline: 1px solid red;*/
+  text-align: center;
+  background: #FEC82F;
+  padding: 0 20px;
+}
+
+#layout .layout-container #layout2 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  /*outline: 1px solid red;*/
+  background-image: url(../images/lemona-history.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+
+#layout .layout-container .group2 {
+  display: flex;
+  height: 495px;
+  /*outline: 1px solid blue;*/
+  background-position: center center;
+}
+
+#layout .layout-container #layout3 {
+  width: 50%;
+  /*outline: 1px solid red;*/
+  text-align: center;
+  background-image: url(../images/lemona-AD.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+
+#layout .layout-container #layout4 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  /*outline: 1px solid red;*/
+  background-image: url(../images/lemona-FAQ.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+
+.arrow-up button {
+  font-size: 48px;
+  border: none;
+  position: relative;
+  top: 21px;
+  left: 20px;
+  bottom: 21px;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 149px;
+  padding: 30px;
+  /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+}
+
+.foot {
+  width: 100%;
+  display: flex;
+  /*outline: 1px solid blue;*/
+}
+
+.f-logo {
+  display: flex;
+  align-items: center;
+}
+
+.info-foot {
+  margin: 0 auto;
+  display: block;
+  font-size: 14px;
+  /*border: 1px solid red;*/
+  padding-top: 4px;
+}
+
+/*.info-foot p {
+  border: 1px solid red;
+}*/
+
+.sns {
+  display: flex;
+}
+
+.sns button {
+  margin-left: 30px;
+  font-size: 48px;
+  border: none;
+  color: #666;
+}

@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>레모나 홈페이지</title>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- 웹폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
   <!-- Bootstrap 아이콘 -->
@@ -25,6 +27,8 @@
   >
   <!-- 제이쿼리 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- 내 자바스크립트 -->
   <script src="script/main.js"></script>
 </head>
@@ -52,7 +56,13 @@
   <!-- 메인 비주얼 -->
   <section id="main-visual">
     <div class="container">
-      <div class="title">
+      <!-- delay, duration 범위: 0 ~ 3000(50단위로 설정) -->
+      <div 
+        class="title" 
+        data-aos="fade-right"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+      >
         <div>
           <h2>우리 모두를 위한<br>
             LIFE VITAMIN
@@ -63,11 +73,83 @@
           </p>
         </div>
       </div><!-- title -->
-      <div class="img">
-        <img src="images/lemona-main-visual1.png" alt="레모나">
+      <div 
+        class="img"
+        data-aos="fade-in"
+        data-aos-delay="1000"
+        data-aos-duration="1000"
+      >
+        <img src="images/lemona-main-visual2.png" alt="레모나">
       </div>
     </div><!-- container -->
   </section>
+
+  <section id="main-section1">
+    <div class="container">
+      <div class="col">
+        <img src="images/lemona-products2.png" alt="레모나">
+      </div>
+      <div class="col">
+        <div class="info">
+          <div>
+            <h2>VITAMIN</h2>
+            <p class="sub-title">6년 연속 브랜드 대상 NO.1 비타민</p>
+          </div>
+          <p>레모나는 1983년 국내 최초로 산제 비타민C로 출시되어 ‘비타민C는 노란색 레모나’라는 이미지를 각인 시키며 장수 브랜드로 사랑받고 있으며 이제는 해외에서도 이너뷰티 제품으로 각광받는 대표적인 한류제품이 되었습니다.</p>
+          <a href="#" class="btn btn-detail">자세히 보기</a>
+        </div>
+      </div>
+    </div><!-- container -->
+  </section>
+
+  <!-- 2 x 2 구성 -->
+  <section id="main-section2">
+    <div class="container">
+      <div class="col">
+        <div class="title">
+          <h2>제품소개</h2>
+          <p>아름다운 건강과 행복을 추구하는 경남제약의 레모나를 소개합니다.</p>
+        </div>
+        <img src="images/lemona_logo.png" alt="레모나 로고">
+      </div><!-- col -->
+      <div class="col">
+        <div>
+          <h2>레모나 히스토리</h2>
+          <p>국민 건강 대표  브랜드 경남제약 레모나의  역사를 소개합니다.</p>
+        </div>
+        <img src="images/lemona_history.png" alt="레모나 히스토리">
+      </div><!-- col -->
+      <div class="col youtube">
+        <div>
+          <h2>홍보영상</h2>
+          <p>레모나의 홍보영상을 보실 수 있습니다.</p>
+        </div>
+        <img src="images/lemona_AD.png" alt="홍보영상">
+      </div><!-- col -->
+      <div class="col">
+        <div>
+          <h2>FAQ</h2>
+          <p>레모나에 대해 궁금한 점을 알려드립니다.</p>
+        </div>
+        <img src="images/lenona_question.png" alt="FAQ">
+      </div><!-- col -->
+    </div><!-- container -->
+  </section>
+
+
+  <!-- 모달창 -->
+  <div class="modal">
+    <div class="box">
+      <iframe 
+        src="https://www.youtube.com/embed/PZjNU6Vu4Mg" title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+      ></iframe>
+      <button class="btn-close">
+        <i class="bi bi-x-circle"></i>
+      </button>
+    </div><!-- box -->
+  </div>
 
 </body>
 </html>

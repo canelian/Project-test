@@ -1,0 +1,162 @@
+/* pc.css */
+body {
+  /* background: #ccc; */
+  font-size: 20px;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  padding-left: 30px;
+  padding-right: 30px;
+  /* outline: 1px solid #333; */
+}
+
+#toggle-btn {
+  display: none;
+}
+
+#main-header {
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  height: var(--pc-header-height);
+  background: #fff;
+}
+
+#main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#gnb ul li {
+  display: inline-block;
+  margin-left: 140px;
+}
+
+/* 메뉴 간격 조정(910px까지의 메뉴 간격) */
+@media screen and (max-width: 910px) {
+  #gnb ul li {
+    margin-left: 80px;
+  }
+}
+
+/* 메인 비주얼 */
+#main-visual {
+  background: #FCEEAD;
+  width: 100%;
+  height: calc(100vh - var(--pc-header-height));
+  box-sizing: content-box;
+  padding-top: var(--pc-header-height);  
+}
+
+#main-visual .container {
+  display: flex;
+  /* background: #ccc; */
+  height: 100%;
+}
+
+#main-visual .title {
+  flex: 1;
+  /* outline: 1px solid #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-visual .title h2 {
+  /* outline: 1px solid red; */
+  font-weight: 500;
+  font-size: 74.4828px;
+  line-height: 90px;
+  margin-bottom: 55px;
+
+letter-spacing: 0.2em;  
+}
+
+#main-visual .title p {
+  /* outline: 1px solid red; */
+}
+
+#main-visual .title p > span {
+  display: block;
+}
+
+#main-visual .title p > span:first-child {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.3em;
+}
+
+#main-visual .title p > span:last-child {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+#main-visual .img {
+  flex: 1;
+  /* outline: 1px solid #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-visual .img img {
+  width: 75%;
+}
+
+/*vitamin 섹션*/
+#main-section1 {
+  display: flex;
+  background: #fff;
+  height: calc(100vh - var(--pc-header-height));
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#main-section1 img {
+  width: 100%;
+  
+}
+
+#main-section1 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+#main-section1 .container .col {
+  flex: 1;
+
+}
+
+#main-section1 .container .col:first-child {
+  width: 100%;
+  
+}
+
+#main-section1 .container .col:last-child {
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main-section1 .container .col:last-child .info {
+  outline: 1px solid red;
+}
+
+#main-section1 .container .col:last-child h2 {
+  font-weight: 500;
+}

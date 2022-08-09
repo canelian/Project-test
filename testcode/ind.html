@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.back{
+	color: #ffff00;
+}
+</style>
+</head>
+<body>
+<p>p tag</p>
+
+<button type="button" id="btn">버튼</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$("#btn").click(function () { 
+
+	$('p').css('background' , '#0000ff').css('color', 'white'); 
+	$('p').text('여기가 p태그');
+
+	// getter
+	let color = $('p').css('background');
+	let text = $("p").text;
+	alert(color);
+	
+	$('p').attr("id", "pid");
+	let id = $('p').attr("id");
+	
+	$('p').attr("class", "back");
+//	$('p').addClass("back"); //위와 동일
+
+//	$('p').attr("class", ""); 
+	$("p").removeClass("back"); //위와 동일
+
+});
+</script>
+</body>
+</html>
