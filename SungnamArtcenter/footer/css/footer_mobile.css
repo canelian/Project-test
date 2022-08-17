@@ -1,0 +1,78 @@
+/* 푸터 */
+  footer {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    /*text-align: left;*/
+    font-family: "Noto Sans Korean", sans-serif;
+    font-size: 12px;
+  }
+
+  footer .logo img {
+    width: 80px;
+  }
+
+  footer .secret {
+    padding: 20px 0px 25px 0px;
+    font-weight: 500;
+
+    text-align: center;
+  }
+
+  footer .secret>a:nth-child(3) {
+    white-space: pre;
+  }
+
+  footer .secret span {
+    padding: 0;
+  }
+
+  footer .secret .ccc {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  footer .address p {
+    font-weight: 400;
+    padding-bottom: 35px;
+    /*font-size: 16px;*/
+  }
+
+  footer #line {
+    border-bottom: 1px solid;
+  }
+
+  footer .sns {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  footer .sns-pro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .sns-pro > a {
+    width: 30px;
+    height: 30px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  footer .sns-pro > a > img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+
+  footer .copyright {
+    font-weight: 400;
+    /*line-height: 23px;*/
+    padding-bottom: 30px;
+    font-size: 10px;
+  }

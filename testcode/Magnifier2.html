@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    max-width: 1024px;
+    height: 800px;
+  }
+  .wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.target {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform .5s ease-out;
+}
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="wrap">
+    <div class="target" data-scale="2" data-image="images/the_concert_hall.png"></div>
+  </div>
+
+  <script>
+  $('.target')
+    .append('<div class="photo"></div>')
+    .children('.photo').css({
+            'background-image': 'url(' + $('.target').attr('data-image') + ')'
+    })
+    $('.target')    
+    .on('mouseover', function () {
+        $(this).children('.photo').css({
+            'transform': 'scale(' + $(this).attr('data-scale') + ')'
+        });
+    })
+    $('.target')
+    .on('mouseout', function () {
+        $(this).children('.photo').css({
+            'transform': 'scale(1)'
+        });
+    })
+    $('.target')
+    .on('mousemove', function (e) {
+        $(this).children('.photo').css({
+            'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%'
+        });
+  })
+  </script>
+</body>
+</html>

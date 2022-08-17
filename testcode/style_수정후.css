@@ -1,0 +1,84 @@
+:root {
+  --text-color: #fff;
+  --basefont-size: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+body {
+  max-width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--text-color);
+}
+
+#menu {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  padding: 112px 100px;
+}
+
+/* B */
+#menu .col {
+  width: calc((100% - 60px) / 4);
+  height: 800px;
+  position: relative;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+#menu .col:hover {
+  transform: scale(1.1);
+}
+#menu .col:last-child {
+  margin-right: 0;
+}
+
+/* B */
+#menu .col p {
+  /*background: rgba(0, 0, 0, 0.5);*/
+  text-align: center;
+  color: var(--text-color);
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: calc(50% - 40px);
+  font-size: var(--basefont-size);
+  font-weight: 700;
+  /*border: 1px solid;*/
+}
+
+/* 공연장 소개 */
+#menu #section {
+  background-image: url(./images/the_concert_hall.png);
+}
+
+/* 층별안내*/
+#menu #section2 {
+  background-image: url(./images/by_floor.png);
+}
+
+/* 좌석안내 */
+#menu #section3 {
+  background-image: url(./images/the_seat.png);
+}
+
+/* 오시는 길 */
+#menu #section4 {
+  background-image: url(./images/way_here.png);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .scale {
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+      /* 부드러운 모션을 위해 추가*/
+    }
+    .scale:hover {
+      transform: scale(1.2);
+    }
+    .img {
+      width: 325px;
+      height: 280px; 
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="img">
+    <div class="scale"><img src="img/logo.png"></div>
+ </div>
+ 
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* 감싸는 div */
+  .wrap {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  /* 확대될 타겟이미지*/
+  .target {
+    display: block;
+    width: 100%;
+  }
+  /* 돋보기 */
+  .magnifier {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 0 3px 3px rgba(0, 0, 0, 0.25);
+    display: none;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="target" src="images/the_concert_hall.png">
+  </div>
+  <script>
+  $(".wrap")
+  .on('mousemove', magnify)
+  .prepend("<div class='magnifier'></div>")
+  .children('.magnifier').css({
+      "background": "url('" + $(".target").attr("src") + "') no-repeat"
+  });
+ 
+  var target = $('.target');
+  var magnifier = $('.magnifier');
+
+  function magnify(e) {
+ 
+  // 1
+  var mouseX = e.pageX - $(this).offset().left;
+  var mouseY = e.pageY - $(this).offset().top;
+
+  // 2
+  if (mouseX < $(this).width() && mouseY < $(this).height() && mouseX > 0 && mouseY > 0) {
+      magnifier.fadeIn(100);
+  } else {
+      magnifier.fadeOut(100);
+  }
+
+  // 3
+  if (magnifier.is(":visible")) {
+    // 4    
+    var rx = -(mouseX / target.width() * target[0].naturalWidth - magnifier.width() / 2);
+    var ry = -(mouseY / target.height() * target[0].naturalHeight - magnifier.height()  /2);
+
+    // 5
+    var px = mouseX - magnifier.width() / 2;
+    var py = mouseY - magnifier.height() / 2;
+
+    // 6
+    magnifier.css({
+        left: px,
+        top: py,
+        backgroundPosition: rx + "px " + ry + "px"
+      });
+    }
+  }
+
+  </script>
+</body>
+</html>
